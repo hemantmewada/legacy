@@ -1,7 +1,25 @@
-
+import React from 'react';
+import Typed from 'typed.js';
 
 function Home() {
+  const el = React.useRef(null);
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        'Get your personal legal advisor.',
+        'One step solution to your all legal problems',
+        'Now legalsathi is always on your phone'
+      ],
+      typeSpeed: 50,
+      loop: true,
+      backSpeed: 50,
+    });
 
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
     <>
       <div className="hero overlay" style={{backgroundImage: 'url("images/hero_bg_1.jpg")'}}>
@@ -11,7 +29,8 @@ function Home() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-lg-5 intro">
                   <h1 className="text-white">
-                    <strong>Notary Public</strong> &amp; Legal Solutions
+                    {/* <strong>Notary Public</strong> &amp; Legal Solutions */}
+                    <span ref={el}></span>
                   </h1>
                   <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus.</p>
                 </div>

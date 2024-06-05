@@ -13,63 +13,107 @@ const Header = () => {
         <div className="site-mobile-menu-body" />
         </div>
         <header className="site-navbar site-navbar-target" role="banner">
-        <div className="container">
-            <div className="row align-items-center position-relative">
-            <div className="col">
-                <div className="site-logo">
-                <a href="index.html">
-                    <strong>Notary</strong>
-                </a>
+            <div className="container">
+                <div className="row align-items-center position-relative header-row">
+                    <div className="col">
+                        <div className="site-logo">
+                        <a href="index.html">
+                            <strong>Notary</strong>
+                        </a>
+                        </div>
+                    </div>
+                    <div className="col-9 text-right text-lg-left">
+                        <span className="d-inline-block d-lg-none">
+                        <a href="#" className=" site-menu-toggle js-menu-toggle py-5 ">
+                            <span className="icon-menu h3 text-black" />
+                        </a>
+                        </span>
+                        <nav className="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                        <ul className="site-menu main-menu js-clone-nav ml-auto ">
+                            <li className="has-children">
+                                <p className="nav-link">Legal issues</p>
+                                <ul className="dropdown">
+                                    <li><a href="#">Legal Notice Reply</a></li>
+                                    <li><a href="#">Legal Notice Preparation</a></li>
+                                    <li><a href="#">Legal Consultation</a></li>
+                                    <li><a href="#">Trademark Registration</a></li>
+                                    <li><a href="#">Copyright Registration</a></li>
+                                    <li><a href="#">Patent Registration</a></li>
+                                    <li><a href="#">Design Registration</a></li>
+                                    <li><a href="#">Trademark Renewal</a></li>
+                                </ul>
+                            </li>
+                            <li className="has-children">
+                                <p className="nav-link">Start A Business</p>
+                                <ul className="dropdown">
+                                    <li><a href="#">Proprietorship</a></li>
+                                    <li><a href="#">Partnership</a></li>
+                                    <li><a href="#">Private Limited Company</a></li>
+                                    <li><a href="#">One Person Company</a></li>
+                                    <li><a href="#">Limited Liability Partnership</a></li>
+                                    <li><a href="#">Nidhi Company</a></li>
+                                    <li><a href="#">Section 8 Company</a></li>
+                                    {/* <li><a href="#">Startup India Registration</a>
+                                    <li><a href="#">Indian Subsidiary</a>
+                                    <li><a href="#">Digital Signature</a>
+                                    <li><a href="#">Udyam Registration</a>
+                                    <li><a href="#">FSSAI Registration</a>
+                                    <li><a href="#">Import Export Code</a> */}
+                                </ul>
+                            </li>
+                            <li className="has-children">
+                                <p className="nav-link">Compliance</p>
+                                <ul className="dropdown">
+                                    <li><a href="#">Proprietorship</a></li>
+                                    <li><a href="#">Proprietorship</a></li>
+                                    <li><a href="#">Partnership</a></li>
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">LLP Compliance</a></li>
+                                    <li><a href="#">Payroll</a></li>
+                                    <li><a href="#">PF Registration</a></li>
+                                    <li><a href="#">PF Return Filing</a></li>
+                                    <li><a href="#">ESI Registration</a></li>
+                                </ul>
+                            </li>
+                            <li className="has-children">
+                                <p className="nav-link">Goods and Services Tax</p>
+                                <ul className="dropdown">
+                                    <li><a href="#">Proprietorship</a></li>
+                                    <li><a href="#">GST Registration</a></li>
+                                    <li><a href="#">GST Return Filing</a></li>
+                                    <li><a href="#">GST LUT Filing</a></li>
+                                    <li><a href="#">GST Registration Cancellation</a></li>
+                                    <li><a href="#">GST Annual Return</a></li>
+                                    <li><a href="#">GST Invoicing</a></li>
+                                    <li><a href="#">GST eInvoicing</a></li>
+                                    <li><a href="#">eWay Bill</a></li>
+                                    <li><a href="#">Input Tax Credit</a></li>
+                                </ul>
+                            </li>
+                            <li className="has-children">
+                                <p className="nav-link">Income Tax</p>
+                                <ul className="dropdown">
+                                    <li><a href="#">Proprietorship</a></li>
+                                    <li><a href="#">Personal Tax Filing</a></li>
+                                    <li><a href="#">Business Tax Filing</a></li>
+                                    <li><a href="#">Tax Notice</a></li>
+                                    <li><a href="#">TDS Filing</a></li>
+                                    <li><a href="#">Form 16</a></li>
+                                    <li><a href="#">ITR Return</a></li>
+                                    {/* <li><a href="#">ITR-1 Return</a></li>
+                                    <li><a href="#">ITR-2 Return</a></li>
+                                    <li><a href="#">ITR-3 Return</a></li>
+                                    <li><a href="#">ITR-4 Return</a></li>
+                                    <li><a href="#">ITR-5 Return</a></li>
+                                    <li><a href="#">ITR-6 Return</a></li>
+                                    <li><a href="#">ITR-7 Return</a></li> */}
+                                </ul>
+                            </li>
+                        </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div className="col-9 text-right text-lg-left">
-                <span className="d-inline-block d-lg-none">
-                <a href="#" className=" site-menu-toggle js-menu-toggle py-5 ">
-                    <span className="icon-menu h3 text-black" />
-                </a>
-                </span>
-                <nav className="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul className="site-menu main-menu js-clone-nav ml-auto ">
-                    <li className="active">
-                    <a href="index.html" className="nav-link">Home</a>
-                    </li>
-                    <li className="has-children">
-                    <a href="practice-areas.html" className="nav-link">Practice Areas</a>
-                    <ul className="dropdown">
-                        <li>
-                        <a href="#">Bankruptcy Law</a>
-                        </li>
-                        <li>
-                        <a href="#">Business Law</a>
-                        </li>
-                        <li>
-                        <a href="#">Civil Rights Law</a>
-                        </li>
-                        <li>
-                        <a href="#">Criminal Law</a>
-                        </li>
-                        <li>
-                        <a href="#">Immigration Law</a>
-                        </li>
-                        <li>
-                        <a href="#">Family Law</a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li>
-                    <a href="testimonials.html" className="nav-link">Testimonials</a>
-                    </li>
-                    <li>
-                    <a href="about.html" className="nav-link">About</a>
-                    </li>
-                    <li>
-                    <a href="contact.html" className="nav-link">Contact</a>
-                    </li>
-                </ul>
-                </nav>
-            </div>
-            </div>
-        </div>
         </header>
         <Outlet />
         <footer className="site-footer" style={{backgroundImage: 'url("images/hero_bg_footer.jpg")'}}>
